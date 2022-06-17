@@ -5,8 +5,11 @@ import me.jasperchasetoq.mostuff.MoStuff;
 
 import javax.annotation.Nonnull;
 
-    public class CompressionCraftItemsSetup {
-        private CompressionCraftItemsSetup() {}
+    public class MoStuffItemsSetup {
+        private MoStuffItemsSetup() {
+        }
 
-        public static void setup(@Nonnull MoStuff plugin) {}
+        public static void setup(@Nonnull MoStuff plugin) {
+        }
+    }
 
