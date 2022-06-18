@@ -33,9 +33,11 @@ public class TransmutationWand extends LimitedUseItem {
         CONVERSIONS.put(Material.COPPER_BLOCK, Material.EXPOSED_COPPER);
         CONVERSIONS.put(Material.EXPOSED_COPPER, Material.WEATHERED_COPPER);
         CONVERSIONS.put(Material.WEATHERED_COPPER, Material.OXIDIZED_COPPER);
+        CONVERSIONS.put(Material.OXIDIZED_COPPER, Material.COPPER_BLOCK);
         CONVERSIONS.put(Material.CUT_COPPER, Material.EXPOSED_CUT_COPPER);
         CONVERSIONS.put(Material.EXPOSED_CUT_COPPER, Material.WEATHERED_CUT_COPPER);
         CONVERSIONS.put(Material.WEATHERED_CUT_COPPER, Material.OXIDIZED_CUT_COPPER);
+        CONVERSIONS.put(Material.OXIDIZED_CUT_COPPER, Material.CUT_COPPER);
         //Stone
         CONVERSIONS.put(Material.COBBLESTONE, Material.STONE);
         CONVERSIONS.put(Material.STONE, Material.STONE_BRICKS);
@@ -92,12 +94,13 @@ public class TransmutationWand extends LimitedUseItem {
         } else if (material == Material.DIRT) {
             dirt(block);
         }
+
     }
 
     private static void dirt(@Nonnull Block block) {
         block.setType(block.getY() < 0 ? Material.ROOTED_DIRT : Material.COARSE_DIRT);
     }
-
+   
 
         public static Map<Material, Material> getConversions() {
             return CONVERSIONS;
