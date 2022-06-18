@@ -1,7 +1,6 @@
 package me.jasperchasetoq.mostuff.implementation.wands;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.handlers.ItemUseHandler;
@@ -20,7 +19,7 @@ import java.util.EnumMap;
 import java.util.Map;
 import java.util.Optional;
 
-public class TransmutationWand extends SlimefunItem  {
+public class TransmutationWand extends LimitedUseItem {
     private static final Map<Material, Material> CONVERSIONS = new EnumMap<>(Material.class);
 
 
@@ -48,23 +47,28 @@ public class TransmutationWand extends SlimefunItem  {
         CONVERSIONS.put(Material.DARK_OAK_LOG, Material.DARK_OAK_WOOD);
         CONVERSIONS.put(Material.ACACIA_LOG, Material.ACACIA_WOOD);
     }
-    @ParametersAreNonnullByDefault
 
-    public TransmutationWand(ItemGroup category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
-        super(category, item, recipeType, recipe);
+
+    @ParametersAreNonnullByDefault
+    public TransmutationWand(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe, int amount) {
+        super(itemGroup, item, recipeType, recipe);
+        setMaxUseCount(amount);
     }
 
     @Nonnull
+    @Override
     public ItemUseHandler getItemHandler() {
         return e -> {
             final Player player = e.getPlayer();
             final Optional<Block> blockOptional = e.getClickedBlock();
+
 
             e.cancel();
 
             blockOptional.ifPresent(block -> convertBlock(player, block));
 
 
+            damageItem(player, e.getItem());
         };
     }
 

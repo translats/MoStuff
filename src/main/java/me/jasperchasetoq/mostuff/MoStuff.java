@@ -26,6 +26,8 @@ public class MoStuff extends JavaPlugin implements SlimefunAddon {
         if (getConfig().getBoolean("options.auto-update") && getDescription().getVersion().startsWith("DEV - ")) {
             new GitHubBuildsUpdater(this, getFile(), "JasperChaseTOQ/MoStuff/master").start();
         }
+
+
     }
     @Override
     public void onDisable() {
