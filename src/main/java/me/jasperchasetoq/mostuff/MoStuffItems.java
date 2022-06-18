@@ -1,6 +1,7 @@
 package me.jasperchasetoq.mostuff;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.items.groups.NestedItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.groups.SubItemGroup;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
@@ -15,4 +16,10 @@ public class MoStuffItems {
 
     public static final ItemGroup MoStuffGeneral = new ItemGroup(new NamespacedKey(MoStuff.getInstance(), "MoStuff"),
             new CustomItemStack(Material.PISTON, "&bMoStuff"));
+
+    //Wands
+    public static final SlimefunItemStack MO_TRANSMUTATION_WAND = new SlimefunItemStack("MO_TRANSMUTATION_WAND", Material.BLAZE_ROD, "&dTransmutation Wand", "", "&fTransmutes certain items to their next form", "");
+    //Misc
+
+    //Info
 }
