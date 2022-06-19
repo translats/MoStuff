@@ -1,5 +1,6 @@
 package me.jasperchasetoq.mostuff.setup;
 
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import me.jasperchasetoq.mostuff.MoStuff;
@@ -25,6 +26,22 @@ import javax.annotation.Nonnull;
                     },
                     500
                     ).register(plugin);
+            //Tools
+            new SlimefunItem(MoStuffItems.MO_TOOLS, MoStuffItems.MO_NETHER_LUMBER_AXE, RecipeType.MAGIC_WORKBENCH,
+                    new ItemStack[] {
+                            SlimefunItems.MAGIC_LUMP_3, SlimefunItems.ENDER_RUNE, SlimefunItems.MAGIC_LUMP_3,
+                            SlimefunItems.ENDER_RUNE, SlimefunItems.LUMBER_AXE, SlimefunItems.ENDER_RUNE,
+                            SlimefunItems.MAGIC_LUMP_3, SlimefunItems.ENDER_RUNE, SlimefunItems.MAGIC_LUMP_3,
+                    }
+            ).register(plugin);
+            //Misc
+            new SlimefunItem(MoStuffItems.MO_MISC, MoStuffItems.MO_NETHER_RUNE, RecipeType.MAGIC_WORKBENCH,
+                    new ItemStack[] {
+                            new ItemStack(Material.NETHERRACK), SlimefunItems.ENDER_RUNE, new ItemStack(Material.NETHERRACK),
+                            SlimefunItems.ENDER_RUNE,SlimefunItems.BLANK_RUNE, SlimefunItems.ENDER_RUNE,
+                            new ItemStack(Material.NETHERRACK), SlimefunItems.ENDER_RUNE, new ItemStack(Material.NETHERRACK),
+                    }
+            ).register(plugin);
         }
     }
 
