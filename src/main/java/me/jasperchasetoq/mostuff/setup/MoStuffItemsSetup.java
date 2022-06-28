@@ -27,21 +27,15 @@ import javax.annotation.Nonnull;
                     500
                     ).register(plugin);
             //Tools
-            new SlimefunItem(MoStuffItems.MO_TOOLS, MoStuffItems.MO_NETHER_LUMBER_AXE, RecipeType.MAGIC_WORKBENCH,
-                    new ItemStack[] {
-                            SlimefunItems.MAGIC_LUMP_3, SlimefunItems.ENDER_RUNE, SlimefunItems.MAGIC_LUMP_3,
-                            SlimefunItems.ENDER_RUNE, SlimefunItems.LUMBER_AXE, SlimefunItems.ENDER_RUNE,
-                            SlimefunItems.MAGIC_LUMP_3, SlimefunItems.ENDER_RUNE, SlimefunItems.MAGIC_LUMP_3,
-                    }
-            ).register(plugin);
             //Misc
-            new SlimefunItem(MoStuffItems.MO_MISC, MoStuffItems.MO_NETHER_RUNE, RecipeType.MAGIC_WORKBENCH,
+            //Wands
+
+            new SlimefunItem(MoStuffItems.MO_MISC, SlimefunItems.FILLED_FLASK_OF_KNOWLEDGE, RecipeType.MAGIC_WORKBENCH,
                     new ItemStack[] {
-                            new ItemStack(Material.NETHERRACK), SlimefunItems.ENDER_RUNE, new ItemStack(Material.NETHERRACK),
-                            SlimefunItems.ENDER_RUNE,SlimefunItems.BLANK_RUNE, SlimefunItems.ENDER_RUNE,
-                            new ItemStack(Material.NETHERRACK), SlimefunItems.ENDER_RUNE, new ItemStack(Material.NETHERRACK),
-                    }
-            ).register(plugin);
+                            SlimefunItems.MAGIC_LUMP_3, SlimefunItems.ENDER_RUNE, SlimefunItems.MAGIC_LUMP_3,
+                            SlimefunItems.ENDER_RUNE, SlimefunItems.FLASK_OF_KNOWLEDGE, SlimefunItems.ENDER_RUNE,
+                            SlimefunItems.MAGIC_LUMP_3, new ItemStack(Material.ENCHANTING_TABLE), SlimefunItems.MAGIC_LUMP_3})
+                    .register(plugin);
         }
     }
 

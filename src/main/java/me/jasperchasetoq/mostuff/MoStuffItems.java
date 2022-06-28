@@ -21,8 +21,6 @@ public class MoStuffItems {
     //Wands
     public static final SlimefunItemStack MO_TRANSMUTATION_WAND = new SlimefunItemStack("MO_TRANSMUTATION_WAND", Material.BLAZE_ROD, "&dTransmutation Wand", "", "&fTransmutes certain items to their next form", "");
     //Misc
-    public static final SlimefunItemStack MO_NETHER_RUNE = new SlimefunItemStack("MO_NETHER_RUNE", Material.FIREWORK_STAR, "&dNether Rune", "", "&fNether Rune", "");
-    //Tools
-    public static final SlimefunItemStack MO_NETHER_LUMBER_AXE = new SlimefunItemStack("MO_NETHER_LUMBER_AXE", Material.NETHERITE_AXE, "&dLumber Axe (Nether)", "", "&fCuts down the whole Tree...(Nether Edition)", "");
+
     //Info
 }
