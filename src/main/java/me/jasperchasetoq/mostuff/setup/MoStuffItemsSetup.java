@@ -6,6 +6,7 @@ import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import me.jasperchasetoq.mostuff.MoStuff;
 import me.jasperchasetoq.mostuff.MoStuffItems;
 import me.jasperchasetoq.mostuff.implementation.wands.TransmutationWand;
+import me.jasperchasetoq.mostuff.implementation.wands.machines.GlassCutter;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
@@ -28,7 +29,13 @@ import javax.annotation.Nonnull;
                     ).register(plugin);
             //Tools
             //Misc
-            //Wands
+            new GlassCutter(MoStuffItems.MO_MACHINES, MoStuffItems.MO_GLASS_CUTTER, RecipeType.MAGIC_WORKBENCH,
+                    new ItemStack[] {
+                            new ItemStack(Material.IRON_BLOCK), new ItemStack(Material.SHEARS), new ItemStack(Material.IRON_BLOCK),
+                            new ItemStack(Material.IRON_BLOCK), new ItemStack(Material.GLASS), new ItemStack(Material.IRON_BLOCK),
+                            new ItemStack(Material.IRON_BLOCK), new ItemStack(Material.STONECUTTER), new ItemStack(Material.IRON_BLOCK)})
+                    .register(plugin);
+
 
             new SlimefunItem(MoStuffItems.MO_MISC, SlimefunItems.FILLED_FLASK_OF_KNOWLEDGE, RecipeType.MAGIC_WORKBENCH,
                     new ItemStack[] {
