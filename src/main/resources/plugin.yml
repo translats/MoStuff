@@ -1,25 +1,25 @@
-## CHANGE this to the name of your plugin.
+## 将此更改为您的插件的名称.
 name: Mostuff
 
-## CHANGE this to your username.
+## 将此更改为您的用户名.
 author: jasperchasetoq
 
-## CHANGE this to a meaninful but short description of your plugin.
+## 将其更改为对您的插件有意义但简短的描述.
 description: A generic Slimefun4-Addon
 
-## CHANGE this to the path of the class that extends JavaPlugin.
+## 将其更改为扩展 JavaPlugin 的类的路径.
 main: me.jasperchasetoq.mostuff.MoStuff
 
-## You can change this to link to your website or repository. You can also remove this line if you want to.
+## 您可以将其更改为链接到您的网站或存储库. 如果您愿意,也可以删除此行.
 website: https://github.com/Slimefun/Addon-Template
 
-## This value is automatically replaced by the version specified in your pom.xml file.
-## Do not change this.
+## 此值会自动替换为您的 pom.xml 文件中指定的版本.
+## 不要改变这个.
 version: ${project.version}
 
-## This is the minimum minecraft version required to run your plugin.
+## 这是运行插件所需的最低 minecraft 版本.
 api-version: 1.18
 
-## This is required and marks Slimefun as a plugin dependency.
+## 这是必需的，并将 Slimefun 标记为插件依赖项.
 depend:
 - Slimefun

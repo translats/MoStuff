@@ -76,5 +76,11 @@
             <version>1.18.24</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>net.guizhanss</groupId>
+            <artifactId>GuizhanLib</artifactId>
+            <version>0.9.9</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 </project>

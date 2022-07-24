@@ -1,5 +1,3 @@
-Dependencys:
+依赖项:
 
-
-Credits:
-Sefiraat for showing me his conversion code which helped set up the transmutation wand.
+致谢：Sefirat 向我展示了他的转换代码，它帮助设置了嬗变魔杖。

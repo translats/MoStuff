@@ -52,7 +52,7 @@ public class GlassCutter extends AContainer implements RecipeDisplayItem {
     @Override
     public String getInventoryTitle() {
 
-        return "&eBasic CC Compressor";
+        return "&e基本 C 压缩器";
 
     }
 
