@@ -13,7 +13,7 @@ public class MoStuffItems {
     public static final SubItemGroup MO_MACHINES = new SubItemGroup(new NamespacedKey(MoStuff.getInstance(), "MO_MACHINES"), MO_GENERAL, new CustomItemStack(Material.FURNACE, "&b机器"));
     public static final SubItemGroup MO_WANDS = new SubItemGroup(new NamespacedKey(MoStuff.getInstance(), "MO_WANDS"), MO_GENERAL, new CustomItemStack(Material.BLAZE_ROD, "&b魔杖"));
     public static final SubItemGroup MO_MISC = new SubItemGroup(new NamespacedKey(MoStuff.getInstance(), "MO_MISC"), MO_GENERAL, new CustomItemStack(Material.CHEST, "&b杂项"));
-    public static final SubItemGroup MO_TOOLS = new SubItemGroup(new NamespacedKey(MoStuff.getInstance(), "MO_TOOLS"), MO_GENERAL, new CustomItemStack(Material.DIAMOND_PICKAXE, "&b杂项"));
+    public static final SubItemGroup MO_TOOLS = new SubItemGroup(new NamespacedKey(MoStuff.getInstance(), "MO_TOOLS"), MO_GENERAL, new CustomItemStack(Material.DIAMOND_PICKAXE, "&b工具"));
     public static final SubItemGroup MO_INFO = new SubItemGroup(new NamespacedKey(MoStuff.getInstance(), "MO_INFO"), MO_GENERAL, new CustomItemStack(Material.BOOK, "&b插件信息"));
 
     public static final ItemGroup MoStuffGeneral = new ItemGroup(new NamespacedKey(MoStuff.getInstance(), "MoStuff"),
