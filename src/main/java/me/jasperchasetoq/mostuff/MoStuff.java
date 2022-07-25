@@ -25,7 +25,7 @@ public class MoStuff extends JavaPlugin implements SlimefunAddon {
         }
 
         if (getConfig().getBoolean("auto-update", true) && getDescription().getVersion().startsWith("Build")) {
-            new GuizhanBuildsUpdater(this, getFile(), "SlimefunGuguProject", "MoStuff-WIP-", "master", false, "zh-CN").start();        }
+            new GuizhanBuildsUpdater(this, getFile(), "SlimefunGuguProject", "MoStuff", "master", false, "zh-CN").start();        }
 
 
     }
@@ -36,8 +36,8 @@ public class MoStuff extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        // You can return a link to your Bug Tracker instead of null here
-        return null;
+        // 您可以在此处返回指向 Bug Tracker 的链接而不是 null
+        return https://github.com/SlimefunGuguProject/MoStuff ;
     }
 
     @Nonnull
