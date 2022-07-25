@@ -37,7 +37,7 @@ public class MoStuff extends JavaPlugin implements SlimefunAddon {
     @Override
     public String getBugTrackerURL() {
         // 您可以在此处返回指向 Bug Tracker 的链接而不是 null
-        return https://github.com/SlimefunGuguProject/MoStuff ;
+        return "https://github.com/SlimefunGuguProject/MoStuff";
     }
 
     @Nonnull
