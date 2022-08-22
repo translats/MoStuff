@@ -23,3 +23,4 @@ api-version: 1.18
 ## 这是必需的，并将 Slimefun 标记为插件依赖项.
 depend:
 - Slimefun
+- GuizhanLibPlugin

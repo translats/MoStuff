@@ -6,7 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
-import net.guizhanss.guizhanlib.updater.GuizhanBuildsUpdater;
+import net.guizhanss.guizhanlibplugin.updater.GuizhanBuildsUpdaterWrapper;
 
 import javax.annotation.Nonnull;
 import java.io.File;
@@ -25,7 +25,7 @@ public class MoStuff extends JavaPlugin implements SlimefunAddon {
         }
 
         if (getConfig().getBoolean("auto-update", true) && getDescription().getVersion().startsWith("Build")) {
-            new GuizhanBuildsUpdater(this, getFile(), "SlimefunGuguProject", "MoStuff", "master", false, "zh-CN").start();        }
+            GuizhanBuildsUpdaterWrapper.start(this, getFile(), "SlimefunGuguProject", "MoStuff", "master", false);        }
 
 
     }
